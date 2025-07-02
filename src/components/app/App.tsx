@@ -1,5 +1,4 @@
 import { CSSProperties, useState } from 'react';
-import clsx from 'clsx';
 import {
 	defaultArticleState,
 	ArticleStateType,
@@ -11,12 +10,10 @@ import styles from './App.module.scss';
 export const App = () => {
 	const [articleState, setArticleState] =
 		useState<ArticleStateType>(defaultArticleState);
-	const handleFormSubmit = (params: ArticleStateType) =>
-		setArticleState(params);
 
 	return (
 		<main
-			className={clsx(styles.main)}
+			className={styles.main}
 			style={
 				{
 					'--font-family': articleState.fontFamilyOption.value,
@@ -26,7 +23,7 @@ export const App = () => {
 					'--bg-color': articleState.backgroundColor.value,
 				} as CSSProperties
 			}>
-			<ArticleParamsForm onSubmit={handleFormSubmit} />
+			<ArticleParamsForm onSubmit={setArticleState} />
 			<Article />
 		</main>
 	);

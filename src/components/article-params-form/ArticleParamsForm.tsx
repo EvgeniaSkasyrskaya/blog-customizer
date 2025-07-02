@@ -16,7 +16,7 @@ import {
 	ArticleStateType,
 } from 'src/constants/articleProps';
 import { useState, useRef } from 'react';
-import { useOutsideClickClose } from 'src/ui/select/hooks/useOutsideClickClose';
+import { useOutsideClickClose } from 'src/hooks/useOutsideClickClose';
 
 type FormSubmitFunction = { onSubmit: (params: ArticleStateType) => void };
 
@@ -59,10 +59,7 @@ export const ArticleParamsForm = (props: FormSubmitFunction) => {
 					[styles.container_open]: isMenuOpen,
 				})}
 				ref={rootRef}>
-				<form
-					className={styles.form}
-					onSubmit={applyParams}
-					style={{ gap: 50 }}>
+				<form className={styles.form} onSubmit={applyParams}>
 					<Text size={31} weight={800} uppercase={true}>
 						задайте параметры
 					</Text>
