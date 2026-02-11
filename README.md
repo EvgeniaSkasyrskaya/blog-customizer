@@ -1,6 +1,6 @@
 # Проект «Блог. Кастомизация»
 
-[Макет проекта](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)
+[Макет проекта](https://www.figma.com/file/FEeiiGLOsE7ktXbPpBxYoD/Custom-dropdown?type=design&node-id=0%3A1&mode=design&t=eXRJnWC6Xsuw0qR4-1)  
 [Ссылка на результат проектной работы](https://evgeniaskasyrskaya.github.io/blog-customizer/)
 
 ### Стек
